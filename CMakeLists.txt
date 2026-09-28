@@ -24,3 +24,5 @@ enable_testing()
 add_executable(tests tests/test_add.cpp)
 target_link_libraries(tests gtest_main mymath)
 
+include(GoogleTest)
+gtest_discover_tests(tests)
